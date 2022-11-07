@@ -2,9 +2,11 @@ package org.example;
 
 public class MiClase {
     private String nombre;
+    private int edad;
 
-    public MiClase(String nombre) {
+    public MiClase(String nombre, int edad) {
         this.nombre = nombre;
+        this.edad = edad;
     }
 
     public String getNombre() {
@@ -15,7 +17,15 @@ public class MiClase {
         this.nombre = nombre;
     }
 
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
     public String toString() {
-        return "MiClase{" + "nombre=" + nombre + '}';
+        return "MiClase{" + "nombre=" + nombre + ", edad=" + edad + '}';
     }
 }
